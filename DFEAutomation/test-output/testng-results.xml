@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="QATechTesting Test Suite" duration-ms="86976" started-at="2020-10-27T18:46:02Z" finished-at="2020-10-27T18:47:29Z">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:com.dfe.runner.HomePageRunner@10e31a9a]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test name="Navigate and Verify Home Page" duration-ms="86976" started-at="2020-10-27T18:46:02Z" finished-at="2020-10-27T18:47:29Z">
+      <class name="com.dfe.runner.HomePageRunner">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.dfe.runner.HomePageRunner@10e31a9a]" name="setUpClass" is-config="true" duration-ms="221" started-at="2020-10-27T18:46:02Z" finished-at="2020-10-27T18:46:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="before()[pri:0, instance:com.dfe.runner.HomePageRunner@10e31a9a]" name="before" is-config="true" duration-ms="1" started-at="2020-10-27T18:46:02Z" finished-at="2020-10-27T18:46:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:com.dfe.runner.HomePageRunner@10e31a9a]" name="runScenario" duration-ms="86333" started-at="2020-10-27T18:46:02Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-10-27T18:47:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["verify login"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login feature"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchSessionException">
+            <message>
+              <![CDATA[A session is either terminated or not started
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'HW0924', ip: '192.168.100.3', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
+Driver info: io.appium.java_client.AppiumDriver
+Capabilities {app: C:\Santosh\Appium\Appium_Cu..., appPackage: com.experitest.ExperiBank, databaseEnabled: false, desired: {app: C:\Santosh\Appium\Appium_Cu..., deviceName: emulator-5554, noReset: false, platformName: android, platformVersion: 8.1.0}, deviceApiLevel: 27, deviceManufacturer: Google, deviceModel: Android SDK built for x86, deviceName: emulator-5554, deviceScreenDensity: 560, deviceScreenSize: 1440x2560, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, noReset: false, pixelRatio: 3.5, platform: LINUX, platformName: android, platformVersion: 8.1.0, statBarHeight: 84, takesScreenshot: true, viewportRect: {height: 2308, left: 0, top: 84, width: 1440}, warnings: {}, webStorageEnabled: false}
+Session ID: c8a239e1-f5ba-4fe6-90b1-1a6d2355a5be
+*** Element info: {Using=id, value=com.experitest.ExperiBank:id/usernameTextField}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchSessionException: A session is either terminated or not started
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'HW0924', ip: '192.168.100.3', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
+Driver info: io.appium.java_client.AppiumDriver
+Capabilities {app: C:\Santosh\Appium\Appium_Cu..., appPackage: com.experitest.ExperiBank, databaseEnabled: false, desired: {app: C:\Santosh\Appium\Appium_Cu..., deviceName: emulator-5554, noReset: false, platformName: android, platformVersion: 8.1.0}, deviceApiLevel: 27, deviceManufacturer: Google, deviceModel: Android SDK built for x86, deviceName: emulator-5554, deviceScreenDensity: 560, deviceScreenSize: 1440x2560, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, noReset: false, pixelRatio: 3.5, platform: LINUX, platformName: android, platformVersion: 8.1.0, statBarHeight: 84, takesScreenshot: true, viewportRect: {height: 2308, left: 0, top: 84, width: 1440}, warnings: {}, webStorageEnabled: false}
+Session ID: c8a239e1-f5ba-4fe6-90b1-1a6d2355a5be
+*** Element info: {Using=id, value=com.experitest.ExperiBank:id/usernameTextField}
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
+at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+at io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:69)
+at io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)
+at org.openqa.selenium.By$ById.findElement(By.java:188)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at com.sun.proxy.$Proxy19.sendKeys(Unknown Source)
+at com.dfe.pages.Homepage.login(Homepage.java:40)
+at com.dfe.stepdefs.HomePageSteps.user_enters_credentails(HomePageSteps.java:22)
+at ✽.user enters credentails(file:src/test/resources/features/HomePage/login.feature:6)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="after()[pri:0, instance:com.dfe.runner.HomePageRunner@10e31a9a]" name="after" is-config="true" duration-ms="4" started-at="2020-10-27T18:47:29Z" finished-at="2020-10-27T18:47:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.dfe.runner.HomePageRunner@10e31a9a]" name="tearDownClass" is-config="true" duration-ms="165" started-at="2020-10-27T18:47:29Z" finished-at="2020-10-27T18:47:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- com.dfe.runner.HomePageRunner -->
+    </test> <!-- Navigate and Verify Home Page -->
+  </suite> <!-- QATechTesting Test Suite -->
+</testng-results>
